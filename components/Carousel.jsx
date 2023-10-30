@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Title from "./ui/Title";
 import Slider from "react-slick";
 
@@ -36,7 +36,7 @@ const Carousel = () => {
       </div>
       <Slider {...settings}>
         <div>
-          <div className="mt-48 text-white flex flex-col items-start gap-y-5">
+          <div className="mt-48  text-white flex flex-col items-start gap-y-10">
             <Title addClass="text-6xl">Fast Food Restaurant</Title>
             <p className="text-sm sm:w-2/5 w-full">
               Doloremque, itaque aperiam facilis rerum, commodi, temporibus
@@ -48,7 +48,7 @@ const Carousel = () => {
           </div>
         </div>
         <div>
-          <div className="relative text-white top-48 flex flex-col items-start gap-y-5">
+          <div className="relative text-white top-48 flex flex-col items-start gap-y-10">
             <Title addClass="text-6xl">Fast Food Restaurant</Title>
             <p className="text-sm sm:w-2/5 w-full">
               Doloremque, itaque aperiam facilis rerum, commodi, temporibus
