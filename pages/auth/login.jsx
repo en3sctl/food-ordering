@@ -7,11 +7,15 @@ import { useSession, signIn } from "next-auth/react";
 
 const Login = () => {
   const { data: session } = useSession();
-  console.log(session);
+
   const onSubmit = async (values, actions) => {
-    await new Promise((resolve) => setTimeout(resolve, 4000));
-    actions.resetForm();
+    const { email, password } = values;
+    let options = { redirect: false, email, password };
+    const res = await signIn("credentials", options);
+    /*   actions.resetForm(); */
   };
+
+  console.log(session);
   const { values, errors, touched, handleSubmit, handleChange, handleBlur } =
     useFormik({
       initialValues: {
@@ -61,11 +65,11 @@ const Login = () => {
           ))}
         </div>
         <div className="flex flex-col w-full gap-y-3 mt-6">
-          <button className="btn-primary transition-all" type="submit">
+          <button className="btn-primary" type="submit">
             LOGIN
           </button>
           <button
-            className="btn-primary !bg-secondary transition-all"
+            className="btn-primary !bg-secondary"
             type="button"
             onClick={() => signIn("github")}
           >
