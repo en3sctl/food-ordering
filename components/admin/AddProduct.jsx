@@ -61,11 +61,11 @@ const AddProduct = ({ setIsProductModal }) => {
   const handleCreate = async () => {
     const data = new FormData();
     data.append("file", file);
-    data.append("upload_preset", "food-ordering-en3sctl");
+    data.append("upload_preset", "food-ordering");
 
     try {
       const uploadRes = await axios.post(
-        "https://api.cloudinary.com/v1_1/dumy2ysjk/image/upload",
+        "https://api.cloudinary.com/v1_1/digvbpmoe/image/upload",
         data
       );
 

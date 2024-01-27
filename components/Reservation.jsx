@@ -3,7 +3,7 @@ import Input from "./form/Input";
 import Title from "./ui/Title";
 import { useFormik } from "formik";
 import { reservationSchema } from "../schema/reservation";
-{  
+{
 }
 
 const Reservation = () => {
@@ -93,7 +93,7 @@ const Reservation = () => {
         </form>
         <div className="lg:flex-1 w-full">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48348.66924008447!2d-74.24927437205034!3d40.766603131286395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254b5958982c3%3A0xb6ab3931055a2612!2sEast%20Orange%2C%20New%20Jersey%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1661853137161!5m2!1str!2str"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.0785681492252!2d20.99153147539203!3d52.22379035811938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc96ae8df4f5%3A0xfd5f36ad75e9e7f5!2sPolish-Japanese%20Academy%20of%20Information%20Technology!5e0!3m2!1sen!2spl!4v1703984457900!5m2!1sen!2spl"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
